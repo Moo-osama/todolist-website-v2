@@ -56,10 +56,8 @@ app.get("/", function(req, res) {
           console.log("Successfully added 3 Items");
         }
       })
-res.redirect("/");
-    }
-
-    else{
+      res.redirect("/");
+    } else {
       res.render("list", {
         listTitle: "Today",
         newListItems: foundItems
